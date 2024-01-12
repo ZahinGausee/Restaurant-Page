@@ -18,7 +18,7 @@ I'm thrilled to share that I've just wrapped up a fantastic project – Restaura
 
 ## Check it out live:
 
-🔗 [Live Demo](https://michalosman.github.io/restaurant-page/) :point_left:
+🔗 [Live Demo](https://zahingausee.github.io/Restaurant-Page/dist/index.html) :point_left:
 
 ## Learning Journey:
 

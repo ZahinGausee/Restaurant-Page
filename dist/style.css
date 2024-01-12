@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#home {
+  text-align: left;
+}
+
+#home p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+} 
+
+#home a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.site-wrap {
+  max-width: 100vw;
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+#navList li.active {
+  border-bottom: 2px solid red;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#home img{
+  border-radius: 50%;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+header {
+  text-align: center;
+  height: 80vh;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url(./img/background.jpg) center no-repeat transparent;
+  background-size: cover;
+  background-color: black;
+  color: wheat;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5; /* Adjust the opacity as needed */
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+} 
+
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.fixed-nav nav{
+  position: fixed;
+  box-shadow: 0 5px rgb(0, 0, 0, 0.1);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.fixed-nav li.logo {
+  max-width: 250px;
+}
+
+li.logo a {
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+#menu {
+  width: 100%;
+}
+
+/* Card */
+#menu {
+  width: 100%;
+}
+.cardContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: content;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 26px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 7px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card img:hover{
+    transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 80%;
+  transition: ease-out 0.3s;
+  object-fit: cover;
+}
+
+.card-content h3 {
+  font-size: 17px;
+  margin: 10px;
+  color: #333;
+}
+
+.card-content p {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+
+footer {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background: white; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Vertical layout for small screens */
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+  margin-bottom: 8px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Arrange form elements horizontally for larger screens */
+/* @media (min-width: 600px) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form label {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .form input,
+  .form textarea {
+    flex: 2;
+  }
+} */

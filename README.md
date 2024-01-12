@@ -18,7 +18,7 @@ I'm thrilled to share that I've just wrapped up a fantastic project – a restau
 
 ## Check it out live:
 
-🔗 [Live Project](Your Project Link)
+🔗 [[Live Project](Your Project Link)](https://zahingausee.github.io/Restaurant-Page/dist/index.html)
 
 ## Learning Journey:
 

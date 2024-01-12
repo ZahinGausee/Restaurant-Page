@@ -2,7 +2,7 @@
 
 🚀 Exciting Update: Completed My Restaurant Page Project! 🍽️
 
-I'm thrilled to share that I've just wrapped up a fantastic project – a restaurant page created entirely from scratch using Vanilla JavaScript, Webpack bundler, and Node.js npm packages! 🌐🚀
+I'm thrilled to share that I've just wrapped up a fantastic project – Restaurant page created with HTML, CSS and JS, Webpack bundler, and Node.js npm packages! 🌐🚀
 
 ## Tech Stack Highlights:
 
@@ -18,7 +18,7 @@ I'm thrilled to share that I've just wrapped up a fantastic project – a restau
 
 ## Check it out live:
 
-🔗 [[Live Project](Your Project Link)](https://zahingausee.github.io/Restaurant-Page/dist/index.html)
+🔗 [Live Demo](https://michalosman.github.io/restaurant-page/) :point_left:
 
 ## Learning Journey:
 
